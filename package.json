@@ -5,11 +5,7 @@
   "main": "build/server.js",
   "scripts": {
     "build": "rimraf build/ && tsc",
-    "preserve": "npm run build",
-    "serve": "concurrently \"tsc --watch\" \"nodemon -q build/index.js\"",
-    "prestart": "npm run build",
-    "start": "node build/index.js",
-    "postinstall": "npm run build"
+    "start": "node build/index.js"
   },
   "author": "",
   "license": "ISC",
